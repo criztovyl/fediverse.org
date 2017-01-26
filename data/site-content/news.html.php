@@ -14,12 +14,12 @@
                 
                 <h1 class="page-header" id="the-idea">
                     <a data-anchorjs-icon="" aria-label="Anchor link for: the-idea" href="#the-idea" class="anchorjs-link " style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
-                    Latest changes, news & acknowledge
+                    Latest changes, news & acknowledgements
                 </h1>
                 <p class="lead">
-                    Just a journal about what I already know its not working and what is being done,
+                    Just a journal about what I already know isn't working and what is being done,
                     so i don't need to queet so much explaining and can code more.
-                    Also a place to thank the contributions and suggestions made by members of the <a href="http://oracle.skilledtests.com/group/fediverse" target="_blank">!fediverse</a>
+                    Also a place to thank members of the <a href="http://oracle.skilledtests.com/group/fediverse" target="_blank">!fediverse</a> for their contributions and suggestions.
 
                     
                 </p>
