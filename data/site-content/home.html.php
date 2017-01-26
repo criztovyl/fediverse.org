@@ -2,8 +2,8 @@
 <div class="jumbotron">
     <div class="container">
         <p>
-            <strong>Fediverse.org</strong> is an attemp to map all public nodes that are part of the <a href="https://gnu.io/social/">GNU Social</a> Fediverse
-            as a way to contribute to the grow of the community, by offering a <strong>neutral</strong> starting point to newcommers, while
+            <strong>Fediverse.org</strong> is an attempt to map all public nodes that are part of the <a href="https://gnu.io/social/">GNU Social</a> Fediverse
+            as a way to contribute to the growth of the community, by offering a <strong>neutral</strong> starting point for newcomers, while
             being a knowledge-base for admins & users.
         </p>
         <p>
@@ -62,7 +62,7 @@
                     echo '</div>';
                     echo '<p>';
                     echo 'We encourage the use of the <a href="https://dev.pztrn.name/gstools/statistics-gnusocial-plugin" target="_blank">Statistics plugin</a>.';
-                    echo ' If you more info about the !fediverse, please visit our friends at <a href="http://gstools.org" target="_blank">gstools.org</a>.';
+                    echo ' If you want more info about the !fediverse, please visit our friends at <a href="http://gstools.org" target="_blank">gstools.org</a>.';
                     echo '</p>';
                     echo '<br /><br />';
                     
