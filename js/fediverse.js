@@ -86,27 +86,6 @@ function node_up(){
 
 
 
-function onload_recaptcha(){
-    // console.log('recaptcha loaded');
-    // enable add button form button when recaptcha has loaded
-    $("#btn-add-node-modal").prop('disabled', false);
-    grecaptcha.render( "recaptcha-box", { sitekey : '6LevIxkTAAAAALDxcmNLrsJa9kr92CfBlnt7ohuq' });
-
-}
-/* function recaptcha_check(){
-
-   if (typeof grecaptcha != "undefined") {
-   // console.log("RCH OK");
-   }else{
-   $.getScript("https://www.google.com/recaptcha/api.js?onload=onload_recaptcha&render=explicit", function() {
-   // console.log("CAP LOADED");
-   });
-   }
-   
-   
-   } */
-
-
 $(function() {
     /* Ping button handler  */
     $("#btn-check-up").click(function(){
@@ -143,8 +122,6 @@ $(function() {
                 if (result_code != "ERROR"){
                     $('#add-node-modal').modal('hide');
                     $("#node_url").val("");
-                    // reset recaptcha
-                    grecaptcha.reset();                    
                 }
                 
                 alert(result_description);

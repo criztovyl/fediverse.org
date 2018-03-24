@@ -113,13 +113,11 @@ if (file_exists($header_inc)) require_once($header_inc);
                                 <label for="node_url">Node Url</label>
                                 <input type="url" id="node_url" name="node_url" class="form-control" placeholder="node url (eg. http://quitter.no)...">                            
                             </p>
-                            <p id="recaptcha-box">
 
-                            </p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button id="btn-add-node-modal" data-loading-text="Adding..."  type="submit" class="btn btn-primary" disabled>Add node</button>
+                            <button id="btn-add-node-modal" data-loading-text="Adding..."  type="submit" class="btn btn-primary">Add node</button>
                         </div>
                     </form>
                 </div>
@@ -129,9 +127,6 @@ if (file_exists($header_inc)) require_once($header_inc);
         <!-- Javascript  -->
         <script src="/js/fediverse-libs.js"></script>
         <script src="/js/fediverse.js"></script>
-        
-        <!-- reCaptcha  -->
-        <script src="https://www.google.com/recaptcha/api.js?onload=onload_recaptcha&render=explicit" async defer></script>
         
     </body>
 </html>
