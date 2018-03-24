@@ -13,17 +13,18 @@ class Fedib extends SQLite3{
     /* based on the code from Andreas Gohr  */
     /* http://www.splitbrain.org/blog/2011-02/12-maxmind_geoip_db_and_sqlite  */
     public function get_geoipdata($ip){
-        $ip_long = ip2long($ip);
-        if ($ip_long == -1 || $ip_long === FALSE) return false;
-        
-        $SQL_Q = "SELECT loc.* FROM geolocation loc, geoblocks blk";
-        $SQL_Q .= " WHERE blk.idx = (".$ip_long."-(".$ip_long." % 65536))";
-        $SQL_Q .= " AND blk.startIpNum < ".$ip_long." AND blk.endIpNum > ".$ip_long;
-        $SQL_Q .= " AND loc.locId = blk.locId;";
+        //$ip_long = ip2long($ip);
+        //if ($ip_long == -1 || $ip_long === FALSE) return false;
+        //
+        //$SQL_Q = "SELECT loc.* FROM geolocation loc, geoblocks blk";
+        //$SQL_Q .= " WHERE blk.idx = (".$ip_long."-(".$ip_long." % 65536))";
+        //$SQL_Q .= " AND blk.startIpNum < ".$ip_long." AND blk.endIpNum > ".$ip_long;
+        //$SQL_Q .= " AND loc.locId = blk.locId;";
 
-        $geodata = $this->querySingle($SQL_Q, true);
+        //$geodata = $this->querySingle($SQL_Q, true);
 
-        return $geodata;
+        //return $geodata;
+        return null;
     }
 
     
