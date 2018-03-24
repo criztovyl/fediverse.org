@@ -17,49 +17,49 @@
                 </h1>
                 <p class="lead">
 
-                    As newcommers to the GNU Social !fediverse some of us had some trouble finding and then choosing a node where to start.
-                    As admin-newcommers many of us had some trouble finding the right how-to or tweak.
-                    So here's the short story of the site and its purpose; after reading it you can decide if its worth sharing and/or contributing.
+                    As newcomers to the GNU Social !fediverse, some of us had some trouble finding and then choosing a node to start on.
+                    As admin-newcomers, many of us had some trouble finding the right how-to or tweak.
+                    So here's the short story of the site and its purpose; after reading it you can decide if it's worth sharing and/or contributing.
 
                 </p>
                 <p>
-                    <i>It was the best of times, it was the worst of times</i>...
+                    <em>It was the best of times, it was the worst of times</em>...
                     As with any federated network it might get confusing at the beginning,
-                    there are pieces of information in different websites, (this site itself is just another drop of water),
-                    different people in different parts of the federation cheering for their nodes (which is ok BTW)
-                    and against others (which is not ok BTW, IMHO),
-                    but no neutral place where newcommers can find <i>all</i> the information
+                    there are pieces of information in different websites (this site itself is just another drop of water),
+                    different people in different parts of the federation cheering for their nodes (which is OK, BTW)
+                    and against others (which is not OK, BTW, IMHO),
+                    but no neutral place where newcomers can find <em>all</em> the information
                     new users and possible node admins require.
                 </p>
                 <p>
-                    Maybe that place existed, but I couldn't find it. So I created <a href="http://www.fediverse.org">Fediverse.org</a>,                   
+                    Maybe that place existed, but I couldn't find it. So I created <a href="http://www.fediverse.org">Fediverse.org</a>.                   
                 </p>
                 <p>
-                    <strong>What for?</strong> you may ask dear visitor, and you would be right. Maytimes while coding the first draft I asked myself the same question.
+                    <strong>What for?</strong> you may ask, dear visitor, and you would be right. Many times while coding the first draft I asked myself the same question.
                     <br />
                     So this is the idea:
                 </p>
                 <p>
                     <strong>New users</strong> (who know the site) must be able to easily find a clear idea of:
                     <ol>
-                        <li>What Gnu Social is</li>
-                        <li>How the last version of GNU Social works</li>
-                        <li>Why is different to propietary microblogging alternatives</li>
-                        <li>Why its better, depiste look&feels and technical problems</li>
-                        <li>And most importantly, which public nodes are up and open to sign ups</li>
+                        <li>What GNU Social is</li>
+                        <li>How the latest version of GNU Social works</li>
+                        <li>Why it is different from propietary microblogging alternatives</li>
+                        <li>Why it is better, despite its different "look and feel" and technical problems</li>
+                        <li>And, most importantly, which public nodes are up and open to sign-ups</li>
                     </ol>
 
                 </p>
                 <p>
                     <strong>Node admins </strong> should be able to find all necessary information to get a node up and running,
-                    plus which configuration tweaks are recommended depending on the use case they foresee for their node, and their servers caps.
+                    plus which configuration tweaks are recommended depending on the use case they foresee for their node, and their server caps.
                 </p>
                 <p>
-                    <strong>New Users & Node admins </strong> should be able to trust the information on the basis that fediverse.org
+                    <strong>New users & Node admins </strong> should be able to trust the information on the basis that fediverse.org
                     won't profit from its traffic, and will not sponsor any particular node for money.
                     <br />
-                    Nodes will be ordered using technical criteria, trying to satisfy the purpose of offering newcommers the best possible options
-                    to adopt GNU Social. In fact the site does not have and will not have any advertising of any kind. See <a href="#funding">Funding</a>.
+                    Nodes will be ordered using technical criteria, trying to satisfy the purpose of offering newcomers the best possible options
+                    to adopt GNU Social. The site does not have, and will not have, any advertising of any kind. See <a href="#funding">Funding</a>.
                 </p>
                 <p>
                     All the code is available at <a href="<?php echo FEDIVERSE_GITHUB;  ?>">Github</a> for contributions, suggestions and forking.
@@ -73,17 +73,17 @@
                     Funding
                 </h1>
                 <p class="lead">
-                   As being neutral is the core principle of the site and the one that can add some value to its purpose,
+                   As neutrality is the core principle of the site and the one that can add some value to its purpose,
                    fediverse.org is a nonprofit site, and plans to fund its maintenance costs with the help of the community.
                 </p>
                 <p>
-                   I expect to fund the effort, time and costs of manteining it via users donations, if they please,
-                   and if they don't I will mantein it for as long as I can.
+                   I expect to fund the effort, time and costs of maintaining it via users' donations, if they please,
+                   and if they don't I will maintain it for as long as I can.
                 </p>
                 <p>                   
                    Additionally, when such community fundings exceed what's necessary for the site's maintenance,
-                   the remainings will be donated to the <a href="http://fsf.org/" target="_blank">Fsf</a>,
-                   as a way to thank them for the job done.
+                   the remainder will be donated to the <a href="http://fsf.org/" title="Free Software Foundation" target="_blank">FSF</a>,
+                   as a way to thank them for a job well done.
                 </p>
                 <p>
                     Donation information will always be public, in a future <a href="/news/">News</a> section.
