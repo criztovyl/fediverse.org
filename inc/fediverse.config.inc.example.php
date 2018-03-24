@@ -17,7 +17,7 @@ define("FEDIVERSE_NODES_TABLE", "./data/node-table.html"); // path where to pars
 
 // Stuff related to the admin cli interface
 // token that must be sent via param as an extra security
-define("FEDIVERSE_ADMIN_TOKEN", "MANUAL_TOKEN");
+define("FEDIVERSE_ADMIN_TOKEN", ""); // <-- Place a token here.
 // allowed actions for the admin interface
 $admin_allowed_actions = Array(
     'generate-table',
