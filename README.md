@@ -1,5 +1,27 @@
+#Important Fork Note
+
+This fork removed the SQLite databases from Git, so don't do a `git pull`
+into an upstream repository!
+
+You can still pull this repo, but will need to back-up your databases
+beforehand and restore them afterwards:
+
+    cd data/dbs
+
+    # Backup
+    # Copy to keep git silent about changed/moved files
+    cp fedib.db{,.bak}
+    cp geodb.db{,.bak}
+
+    git pull
+
+    # Restore
+    mv fedib.db{.bak,}
+    mv geodb.db{.bak,}
+
 Fediverse.org
 =============
+
  
  Fediverse.org is an attempt to map all public nodes that are part of the GNU
  social Fediverse, in order to contribute to the growth of the community. We
