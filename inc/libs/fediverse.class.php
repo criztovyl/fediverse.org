@@ -233,7 +233,7 @@ class Fediverse{
         // $html_output .= "     <th>Theme</th>";
         // $html_output .= "     <th>Closed</th>";
         // $html_output .= "     <th>Private</th>";
-        $html_output .= "     <th>Details</th>";        
+        //$html_output .= "     <th>Details</th>";
         $html_output .= "     <th class='lastseenth'>Ping (host-time)</th>";
         $html_output .= "  </tr>";
         $html_output .= "<thead><tbody>";        
@@ -266,7 +266,7 @@ class Fediverse{
             // $html_output .= "  <td>".$node["node_closed"]."</td>";
             // $html_output .= "  <td>".$node["node_private"]."</td>";
             
-            $html_output .= "  <td><a href='#soon'>Details</a></td>";                                           
+            //$html_output .= "  <td>Details<sup>soon</sup></td>";
             $html_output .= "  <td style='font-size:10px;' class='node_lastseen-".$node["node_id"]."'>".date("M d Y H:i:s", $node["node_last_up"])."</td>";
             $html_output .= "</tr>";
 
