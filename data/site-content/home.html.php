@@ -62,8 +62,9 @@
 
                     // meta info
                     $change_time = filectime(FEDIVERSE_NODES_TABLE);
+
                     echo '<div>';
-                    echo '<p>Hosts are pinged once per hour.<p>';
+                    echo '<p>Hosts are pinged once per hour, host info (version etc.) is updated once a day.<p>';
                     echo '<dl>';
                     echo '<dt>Table generated</dt><dd>'.date("F d Y H:i:s", $change_time).", ".date_ago($change_time)."</dd>";
                     //echo '<dt>Current server time</dt><dd>'.date("F d Y H:i:s.")."</dd>";
