@@ -135,7 +135,9 @@ class Fediverse{
 
 
             // screen print
-            if ($dodebug==true && DEBUG) printf("cUrl error (#%d): %s", curl_errno($ch), htmlspecialchars(curl_error($ch)));
+            //if ($dodebug==true && DEBUG)
+            printf("cUrl error (#%d): %s", curl_errno($ch), htmlspecialchars(curl_error($ch)));
+            echo PHP_EOL;
             
             if ($dodebug==true && DEBUG) echo DEBUG_NEWLINE."> Info:";
             if ($dodebug==true && DEBUG) var_dump($info);
