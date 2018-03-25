@@ -269,7 +269,12 @@ class Fediverse{
             // $html_output .= "  <td>".$node["node_private"]."</td>";
             
             //$html_output .= "  <td>Details<sup>soon</sup></td>";
-            $html_output .= "  <td style='font-size:10px;' class='node_lastseen-".$node["node_id"]."'>".date("M d Y H:i:s", $node["node_last_up"])."</td>";
+
+            $html_output .= "  <td style='font-size:10px;' class='node_lastseen-".$node["node_id"]."'>";
+
+            if(!empty($node["node_last_up"])) $html_output .= date("M d Y H:i:s", $node["node_last_up"]);
+
+            $html_output .= "</td>";
             $html_output .= "</tr>";
 
             // add node map data
