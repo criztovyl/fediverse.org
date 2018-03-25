@@ -23,11 +23,13 @@
                     Table
                 </a>
             </li>
+            <?php /* No Geo-Data, no map. (Currently missing the database)
             <li role="presentation">
                 <a aria-controls="fediverse-map-content" data-toggle="tab" id="fediverse-map-tab" role="tab" href="#fediverse-map-content">
                     Map
                 </a>
             </li>
+             */?>
             <li style="padding-top:10px;margin-right:5px;float:right;" class="hidden-xs">
                 <span class="label label-default text-right" style="font-size:18px;">
                     <?php echo $fedib->get_nodes_count();  ?> nodes

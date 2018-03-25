@@ -189,22 +189,23 @@ class Fediverse{
 
         
         // get geodata
-        $node_geodata = $db_geoip->get_geoipdata($this->a_node["node_ip"]);
-        if (!empty($node_geodata)){
+        // criztovyl: Missing GeoData DB, so remove this for now.
+        //$node_geodata = $db_geoip->get_geoipdata($this->a_node["node_ip"]);
+        //if (!empty($node_geodata)){
 
-            $this->a_node["node_country"] = $node_geodata["country"];
-            $this->a_node["node_city"] = $node_geodata["city"];
-            $this->a_node["node_latitude"] = $node_geodata["latitude"];
-            $this->a_node["node_longitude"] = $node_geodata["longitude"];
+        //    $this->a_node["node_country"] = $node_geodata["country"];
+        //    $this->a_node["node_city"] = $node_geodata["city"];
+        //    $this->a_node["node_latitude"] = $node_geodata["latitude"];
+        //    $this->a_node["node_longitude"] = $node_geodata["longitude"];
 
-            if (DEBUG && $dodebug) echo "> geo data OK. Country: ".$this->a_node["node_country"];
-            if (DEBUG && $dodebug) echo ", City: ".$this->a_node["node_city"];
-            if (DEBUG && $dodebug) echo ", Lat/Long: ".$this->a_node["node_latitude"]."/".$this->a_node["node_longitude"];
-            if (DEBUG && $dodebug) echo DEBUG_NEWLINE;
+        //    if (DEBUG && $dodebug) echo "> geo data OK. Country: ".$this->a_node["node_country"];
+        //    if (DEBUG && $dodebug) echo ", City: ".$this->a_node["node_city"];
+        //    if (DEBUG && $dodebug) echo ", Lat/Long: ".$this->a_node["node_latitude"]."/".$this->a_node["node_longitude"];
+        //    if (DEBUG && $dodebug) echo DEBUG_NEWLINE;
 
-        }else{
-            if (DEBUG && $dodebug) echo "> could NOT get geo data because of wrong ip OR ip is not in MaxMid database : ".$this->a_node["node_ip"].DEBUG_NEWLINE;
-        }
+        //}else{
+        //    if (DEBUG && $dodebug) echo "> could NOT get geo data because of wrong ip OR ip is not in MaxMid database : ".$this->a_node["node_ip"].DEBUG_NEWLINE;
+        //}
         
         
         
@@ -213,7 +214,10 @@ class Fediverse{
 
     /* Function to generate the html inc file to display in fediverse-map homepage */
     public function generate_html($nodes, $dodebug = true){
-        $map_data = Array();
+
+        // criztovyl: GeoData does not work currently, so do not pollute the output.
+        //$map_data = Array();
+
         $html_output = "<div class='table-responsive'>";
         $html_output .= "<table id='fediverse-main-table' class='table table-striped display'>";
         $html_output .= "<thead>";
@@ -223,7 +227,7 @@ class Fediverse{
         $html_output .= "     <th>Version</th>";
         $html_output .= "     <th>Invite-Only</th>";
         $html_output .= "     <th>Text-Limit</th>";
-        $html_output .= "     <th>Country</th>";
+        //$html_output .= "     <th>Country</th>";
         
         // $html_output .= "     <th>Timezone</th>";        
         // $html_output .= "     <th>Theme</th>";
@@ -255,7 +259,7 @@ class Fediverse{
             $html_output .= "  <td>".$node["node_version"]."</td>";
             $html_output .= "  <td>".$inviteonly_info."</td>";
             $html_output .= "  <td>".$text_limit."</td>";
-            $html_output .= "  <td>".$country_info."</td>";
+            //$html_output .= "  <td>".$country_info."</td>";
             
             // $html_output .= "  <td>".$node["node_timezone"]."</td>";            
             // $html_output .= "  <td>".$node["node_theme"]."</td>";
@@ -267,18 +271,20 @@ class Fediverse{
             $html_output .= "</tr>";
 
             // add node map data
-            $map_data[] = Array(
-                'text' => '<a target="_blank" href="'.$node["node_uri"].'">'.str_replace(Array("http", "https", "://"), "", $node["node_uri"]).'</a><br />'.$node["node_country"],
-                'lat' => $node["node_latitude"],
-                'lon' => $node["node_longitude"]
-            );
+            //$map_data[] = Array(
+            // criztovyl: GeoData does not work currently, so do not pollute the output.
+            //    'text' => '<a target="_blank" href="'.$node["node_uri"].'">'.str_replace(Array("http", "https", "://"), "", $node["node_uri"]).'</a><br />'.$node["node_country"],
+            //    'lat' => $node["node_latitude"],
+            //    'lon' => $node["node_longitude"]
+            //);
         }
 
         $html_output .= "</tbody></table>";
         $html_output .= "</div>";
 
         // add map to the output, before file creation
-        $html_output .= "\n<script>var map_nodes = ".json_encode($map_data).";</script>";
+        // criztovyl: GeoData does not work currently, so do not pollute the output.
+        //$html_output .= "\n<script>var map_nodes = ".json_encode($map_data).";</script>";
 
         @unlink(FEDIVERSE_NODES_TABLE);
         $fh = fopen(FEDIVERSE_NODES_TABLE, "w");
