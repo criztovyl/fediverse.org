@@ -20,7 +20,7 @@ class Fediverse{
     // check for the internet connection
     // from here: http://stackoverflow.com/a/4860432
     public function is_internet(){
-        $connected = @fsockopen("www.google.com", 80); 
+        $connected = @fsockopen("www.wikipedia.org", 80);
         //website, port  (try 80 or 443)
         if ($connected){
             $is_conn = true; //action when connected
