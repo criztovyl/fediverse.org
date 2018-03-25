@@ -58,11 +58,16 @@
                     // include the generated table
                     require_once(FEDIVERSE_NODES_TABLE);
 
+                    echo PHP_EOL;
+
                     // meta info
                     $change_time = filectime(FEDIVERSE_NODES_TABLE);
-                    echo '<br /><div role="alert" class="alert alert-warning">';
-                    echo '<strong>Table generated: </strong>'.date("F d Y H:i:s", $change_time).", ".date_ago($change_time).". ";
-                    echo '<strong>Current server time:</strong> '.date("F d Y H:i:s.");
+                    echo '<div>';
+                    echo '<p>Hosts are pinged once per hour.<p>';
+                    echo '<dl>';
+                    echo '<dt>Table generated</dt><dd>'.date("F d Y H:i:s", $change_time).", ".date_ago($change_time)."</dd>";
+                    //echo '<dt>Current server time</dt><dd>'.date("F d Y H:i:s.")."</dd>";
+                    echo '</dl>';
                     echo '</div>';
                     // criztovyl: pztrn.name  & gstools.org are down, remove the links.
                     //echo '<p>';
@@ -89,10 +94,11 @@
     </div>
 
     <div class="row">
-        <p>This is a restore of fediverse.org which is currently, as of March 2018, gone.</p>
-        <p>Until now only the list of instances is available, the remaining things will reappear as I take time for that.</p>
+        <p>This is a restore of fediverse.org which is currently, as of March 2018, gone.<br/>
+        Until now only the list of instances is available, the remaining things will reappear as I take time for that.</p>
         <p>The sources are online at GitHub, contributions welcome. <a href="https://github.com/criztovyl/fediverse.org">criztovyl/fediverse.org</a>.</p>
         <p><small>Thank you <a href="https://github.com/nicolasea">Nicolas</a>, for hosting fediverse.org until now and making the sources freely available! Hope you're fine.</small></p>
+        <p><a href="LICENSE">License: AGPLv3</a>. <a href="https://browse.git.joinout.de/fediverse.org.git/">Sources</a>, <a href="https://github.com/criztovyl/fediverse.org">Sources@GitHub</a></p>
     </div>
 
 </div>
