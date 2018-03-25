@@ -27,6 +27,7 @@ if (file_exists($header_inc)) require_once($header_inc);
         <!-- simple favicon  -->
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">        
+        <style> /* padding for navbar-fixed-top */ body { padding-top: 70px; } </style>
     </head>
     
     <body>
@@ -50,6 +51,7 @@ if (file_exists($header_inc)) require_once($header_inc);
 
                     <ul class="nav navbar-nav navbar-left">
                         <li <?php echo menu_sel("home", $site_section, true);  ?>><a href="/">Home</a></li>
+                        <?php /*
                         <li <?php echo menu_sel("about", $site_section, true);  ?>><a href="/about">About</a></li>                                                
                         <li <?php echo menu_sel("news", $site_section, true);  ?>><a href="/news">News</a></li>
                         <li <?php echo menu_sel("to-do", $site_section, true);  ?>><a href="/to-do">To Do</a></li>
@@ -65,13 +67,16 @@ if (file_exists($header_inc)) require_once($header_inc);
                         </li>
 
                         <li><a target="_blank" href="https://quitter.no/tuxxus">Contact</a></li>                        
+                         */ ?>
                     </ul>
                     
                     <ul class="nav navbar-nav navbar-right">
+                        <?php /*
                         <li class="btn-flattr">
                             <!-- flattr  -->
                             <script id='fb8zjdj'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//button.flattr.com/view/?fid=vonky3&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fb8zjdj');</script>
                         </li>
+                         */ ?>
                         <li>
                             <button class="btn btn-success" data-toggle="modal" data-target="#add-node-modal" style="margin-top:8px;margin-left:10px;">Add node</button>
                         </li>

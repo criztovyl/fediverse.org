@@ -1,3 +1,4 @@
+<?php /* I'll have to review the motivation of this marketing before I put it online.
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
@@ -14,6 +15,7 @@
 </div>
 
 <br />
+ */?>
 
 <div class="container">
     <div class="row">
@@ -85,4 +87,12 @@
             
         </div>
     </div>
+
+    <div class="row">
+        <p>This is a restore of fediverse.org which is currently, as of March 2018, gone.</p>
+        <p>Until now only the list of instances is available, the remaining things will reappear as I take time for that.</p>
+        <p>The sources are online at GitHub, contributions welcome. <a href="https://github.com/criztovyl/fediverse.org">criztovyl/fediverse.org</a>.</p>
+        <p><small>Thank you <a href="https://github.com/nicolasea">Nicolas</a>, for hosting fediverse.org until now and making the sources freely available! Hope you're fine.</small></p>
+    </div>
+
 </div>
