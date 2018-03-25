@@ -62,11 +62,12 @@
                     echo '<strong>Table generated: </strong>'.date("F d Y H:i:s", $change_time).", ".date_ago($change_time).". ";
                     echo '<strong>Current server time:</strong> '.date("F d Y H:i:s.");
                     echo '</div>';
-                    echo '<p>';
-                    echo 'We encourage the use of the <a href="https://dev.pztrn.name/gstools/statistics-gnusocial-plugin" target="_blank">Statistics plugin</a>.';
-                    echo ' If you want more info about the !fediverse, please visit our friends at <a href="http://gstools.org" target="_blank">gstools.org</a>.';
-                    echo '</p>';
-                    echo '<br /><br />';
+                    // criztovyl: pztrn.name  & gstools.org are down, remove the links.
+                    //echo '<p>';
+                    //echo 'We encourage the use of the <a href="https://dev.pztrn.name/gstools/statistics-gnusocial-plugin" target="_blank">Statistics plugin</a>.';
+                    //echo ' If you want more info about the !fediverse, please visit our friends at <a href="http://gstools.org" target="_blank">gstools.org</a>.';
+                    //echo '</p>';
+                    //echo '<br /><br />';
                     
                 }else{
 
