@@ -1,4 +1,4 @@
-#Important Fork Notes.
+# Important Fork Notes
 
 ## Existing Repos
 
@@ -29,6 +29,9 @@ is better, please open an Issue.
 ## GeoIP
 
 The GeoIP link below is broken, and I did not yet take time to look into it.
+But the code itself should work so far, I've adapted it so far that it can run
+with an empty GeoIP database.
+(Note: I refer to this as GeoData in source and commits.)
 
 Fediverse.org
 =============
