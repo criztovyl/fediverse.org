@@ -3,8 +3,10 @@
  * Fediverse-Map configuration vars
  */
 
-define("DEBUG", true); // enable/disable debug outputs
-define("DEBUG_NEWLINE", "<br />");
+if(!defined("DEBUG"))
+    define("DEBUG", true); // enable/disable debug outputs
+
+define("DEBUG_NEWLINE", "\n");
 // define("DEBUG_NEWLINE", "\r\n");
 
 define("FEDIVERSE_GITHUB", "https://github.com/tuxxus/fediverse.org");
