@@ -20,6 +20,7 @@
 $fedib = new Fedib(FEDIVERSE_DB); // fediverse sqlite database handler
 $fedb_geoip = new Fedib(GEOIP_DB); // geoip database
 $fediverse = new Fediverse(); // instance to handle communication with nodes
+$update_node_info = isset($update_node_info) ? $update_node_info : false;
 
 if (FALSE == $fediverse->is_internet()) die("Server has no connection to Inet. Craps.".DEBUG_NEWLINE);
 
@@ -41,13 +42,15 @@ foreach ($q_nodes as $node){
 
     // check if node is down/up
     $fediverse->is_up();
-    
-    // query and update new node values, pass the geoip database instance to query there for the geoup
-    $fediverse->update_node_info( $fedb_geoip );
+
+    if($update_node_info) {
+        // query and update new node values, pass the geoip database instance to query there for the geoup
+        $fediverse->update_node_info( $fedb_geoip );
+    }
+
     // save in the database new node values
     $fedib->update_node($fediverse->a_node);
-    
-    
+
     if (DEBUG) echo DEBUG_NEWLINE;
 
 }
@@ -60,8 +63,3 @@ $fediverse->generate_html($fedib->get_nodes());
 // db close
 $fedib->close();
 $fedb_geoip->close();
-    
-    
- 
-
-?>
