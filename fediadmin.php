@@ -31,7 +31,7 @@ foreach ($argv as $arg) {
 
 // actual process
 if (isset($_GET["token"])
-    && $_GET["token"] == FEDIVERSE_ADMIN_TOKEN
+    && hash_equals(FEDIVERSE_ADMIN_TOKEN, $_GET["token"])
     && isset($_GET["action"])
     && in_array($_GET["action"], $admin_allowed_actions)
 ){
