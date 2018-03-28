@@ -1,4 +1,6 @@
-#Important Fork Note
+#Important Fork Notes.
+
+## Existing Repos
 
 This fork removed the SQLite databases from Git, so don't do a `git pull`
 into an upstream repository!
@@ -18,6 +20,15 @@ beforehand and restore them afterwards:
     # Restore
     mv fedib.db{.bak,}
     mv geodb.db{.bak,}
+
+## PHP Version
+
+`fediverse.org` requires PHP >= 5.6 or PHP 7. If you think a lower PHP version
+is better, please open an Issue.
+
+## GeoIP
+
+The GeoIP link below is broken, and I did not yet take time to look into it.
 
 Fediverse.org
 =============
