@@ -135,12 +135,12 @@ class Fediverse{
 
 
             // screen print
-            //if ($dodebug==true && DEBUG)
-            printf("cUrl error for %s: #%d: %s", $this->a_node['node_uri'], curl_errno($ch), htmlspecialchars(curl_error($ch)));
-            echo PHP_EOL;
-            
-            if ($dodebug==true && DEBUG) echo DEBUG_NEWLINE."> Info:";
-            if ($dodebug==true && DEBUG) var_dump($info);
+            if ($dodebug==true && DEBUG)
+            {
+                printf("cUrl error for %s: #%d: %s", $this->a_node['node_uri'], curl_errno($ch), htmlspecialchars(curl_error($ch)));
+                echo DEBUG_NEWLINE."> Info:";
+                var_dump($info);
+            }
         }
         // fclose($rh); // close log
         
