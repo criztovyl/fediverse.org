@@ -151,9 +151,17 @@ class Fediverse{
 
 
         // update internal instance node data
-        $this->a_node['node_up'] = ($json_result=="ok" ? 1 : 0);
+        if($json_result=="ok")
+        {
+            $this->a_node['node_up'] = 1;
+            $this->a_node['node_last_up'] = time();
+        } else {
+            $this->a_node['node_up'] = 0;
+        }
+
         if (DEBUG && $dodebug==true) echo $this->a_node['node_up'].DEBUG_NEWLINE;
-        
+
+
         return $json_result;
         
     }  
