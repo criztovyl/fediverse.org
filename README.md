@@ -24,7 +24,7 @@ beforehand and restore them afterwards:
 ## PHP Version
 
 `fediverse.org` requires PHP >= 5.6 or PHP 7. If you think a lower PHP version
-is better, please open an Issue.
+is better, please [open an issue at GitHub][iss].
 
 ## GeoIP
 
@@ -75,3 +75,5 @@ Fediverse.org
  donate if you want to contribute! Please visit the
  [TODO list](http://www.fediverse.org/to-do) of pending tasks and suggestions
  for a better idea of how you can contribute.
+
+[iss]: https://github.com/criztovyl/fediverse.org/issues
